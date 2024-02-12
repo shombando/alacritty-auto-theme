@@ -48,10 +48,13 @@ systemctl --user start AlacrittyAutoTheme.service
 ```
 That's it, now when you switch your system theme, all Alacritty windows will also switch the respective light/dark themes you picked.
 
-## Alternate Usage
-Since this script is dependent on Gnome and systemd if you want to use it "manually" you can create an alias for switching to your preferred theme by calling `alacritty-light` or `alacritty-dark`: 
+## Alternate Usage / Manual Override
+If you want to manually override the light/dark theme independent of the system theme. It will reset to the system theme the next time the system theme changes. You can call `alacritty-light` or `alacritty-dark`.
+
+Also, since this script is dependent on Gnome and systemd if you want to use it "manually" by calling the aliases.
+
 ``` sh
-alias alacritty-light="echo \"import = [ '.~/.config/alacritty/alacritty-auto-theme/light_theme.toml' ]\" > ~/.config/alacritty/alacritty-auto-theme/theme.toml"
-alias alacritty-dark="echo \"import = [ '.~/.config/alacritty/alacritty-auto-theme/dark_theme.toml' ]\" > ~/.config/alacritty/alacritty-auto-theme/theme.toml"
+alias alacritty-light="echo \"import = [ '~/.config/alacritty/alacritty-auto-theme/light_theme.toml' ]\" > ~/.config/alacritty/alacritty-auto-theme/theme.toml"
+alias alacritty-dark="echo \"import = [ '~/.config/alacritty/alacritty-auto-theme/dark_theme.toml' ]\" > ~/.config/alacritty/alacritty-auto-theme/theme.toml"
 ```
 
