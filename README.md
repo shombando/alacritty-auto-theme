@@ -41,6 +41,7 @@ import = [
 Then we'll install the systemd service, by opening a terminal in this current folder and running the following:
 ``` sh
 cd ~/.config/alacritty/alacritty-auto-theme
+mkdir -p ~/.config/systemd/user/
 cp ./AlacrittyAutoTheme.service ~/.config/systemd/user/
 systemctl --user enable AlacrittyAutoTheme.service
 systemctl --user start AlacrittyAutoTheme.service
