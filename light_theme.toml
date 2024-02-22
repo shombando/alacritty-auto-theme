@@ -1,1 +1,1 @@
-import = [ '~/.config/alacritty/themes/themes/pencil_light.toml' ]
+import = [ '~/.config/alacritty/themes/themes/nord_light.toml' ]

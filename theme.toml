@@ -1,1 +1,1 @@
-import = [ '.~/.config/alacritty/alacritty-auto-theme/dark_theme.toml' ]
+import = [ '~/.config/alacritty/alacritty-auto-theme/dark_theme.toml' ]
